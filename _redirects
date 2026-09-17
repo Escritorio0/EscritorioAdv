@@ -1,0 +1,61 @@
+# Redirecionamentos permanentes das URLs antigas em .html.
+/index.html                    /                               301
+/areas-de-atuacao.html         /areas-de-atuacao/              301
+/area-detalhe.html             /area/                          301
+/direito-previdenciario.html   /direito-previdenciario/        301
+/direito-trabalhista.html      /direito-trabalhista/           301
+/direito-civil.html            /direito-civil/                 301
+/blog.html                     /blog/                          301
+/artigo.html                   /artigo/                        301
+/contato.html                  /contato/                       301
+/politica-de-privacidade.html  /politica-de-privacidade/       301
+/politica-de-cookies.html      /politica-de-cookies/           301
+/termos-de-uso.html            /termos-de-uso/                 301
+/admin/login.html              /admin/login/                   301
+/admin/painel.html             /admin/                         301
+/admin/editor.html             /admin/editor/                  301
+
+# Aliases antigos de detalhes de área apontam para a rota canônica.
+/areas-de-atuacao/direito-previdenciario/  /direito-previdenciario/  301
+/areas-de-atuacao/direito-trabalhista/     /direito-trabalhista/     301
+/areas-de-atuacao/direito-civil/           /direito-civil/           301
+
+# Uma única forma pública por rota: sempre com barra final.
+/areas-de-atuacao          /areas-de-atuacao/          301
+/area                      /area/                       301
+/direito-previdenciario    /direito-previdenciario/    301
+/direito-trabalhista       /direito-trabalhista/       301
+/direito-civil             /direito-civil/              301
+/blog                      /blog/                       301
+/artigo                    /artigo/                     301
+/contato                   /contato/                    301
+/politica-de-privacidade   /politica-de-privacidade/   301
+/politica-de-cookies       /politica-de-cookies/       301
+/termos-de-uso             /termos-de-uso/              301
+/admin                     /admin/                      301
+/admin/login                /admin/login/                301
+/admin/editor                /admin/editor/                301
+/blog/:slug                 /blog/:slug/                 301
+/areas-de-atuacao/:slug     /areas-de-atuacao/:slug/     301
+
+# Rewrites internos: a URL continua limpa, sem redirecionar de fato.
+/                            /index.html                   200
+/areas-de-atuacao/           /areas-de-atuacao.html         200
+/area/                       /area-detalhe.html             200
+/direito-previdenciario/     /direito-previdenciario.html   200
+/direito-trabalhista/        /direito-trabalhista.html      200
+/direito-civil/              /direito-civil.html            200
+/blog/                       /blog.html                     200
+/blog/:slug/                 /artigo.html                   200
+/artigo/                     /artigo.html                   200
+/contato/                    /contato.html                  200
+/politica-de-privacidade/    /politica-de-privacidade.html  200
+/politica-de-cookies/        /politica-de-cookies.html      200
+/termos-de-uso/              /termos-de-uso.html            200
+/admin/login/                /admin/login.html               200
+/admin/editor/                /admin/editor.html               200
+/admin/                       /admin/painel.html               200
+/areas-de-atuacao/:slug/     /area-detalhe.html             200
+
+# Qualquer outra rota não reconhecida.
+/*  /404.html  404

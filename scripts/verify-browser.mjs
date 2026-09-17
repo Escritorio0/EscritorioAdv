@@ -2,7 +2,7 @@ import { chromium } from 'playwright-core';
 import { mkdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
-const origin = process.env.PREVIEW_URL ?? 'http://127.0.0.1:4173/clientes/blogadvogado';
+const origin = process.env.PREVIEW_URL ?? 'http://127.0.0.1:4173';
 const chromePath = process.env.CHROME_PATH ?? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const artifactDirectory = resolve('artifacts');
 const routes = [

@@ -3,7 +3,7 @@ import { defineConfig, type Connect, type Plugin } from 'vite';
 
 const page = (name: string) => resolve(import.meta.dirname, name);
 
-const BASE = '/clientes/blogadvogado/';
+const BASE = '/';
 
 const CLEAN_URL_ROUTES: [RegExp, string][] = [
   [/^areas-de-atuacao\/$/, 'areas-de-atuacao.html'],

@@ -7,7 +7,8 @@ const site = 'https://brenochaves.dev/clientes/blogadvogado';
 
 await mkdir(publicDir, { recursive: true });
 await Promise.all([
-  copyFile(resolve(root, '.htaccess'), resolve(publicDir, '.htaccess')),
+  copyFile(resolve(root, '_redirects'), resolve(publicDir, '_redirects')),
+  copyFile(resolve(root, '_headers'), resolve(publicDir, '_headers')),
   copyFile(resolve(root, 'robots.txt'), resolve(publicDir, 'robots.txt'))
 ]);
 

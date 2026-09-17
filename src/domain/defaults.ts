@@ -23,7 +23,7 @@ export const DEFAULT_AUTHOR: Author = {
   slug: 'andres-oliveira',
   name: 'Dr. Andre Oliveira',
   role: 'Sócio Fundador',
-  avatarUrl: '/clientes/blogadvogado/images/da0602dd94c3e7a7.webp',
+  avatarUrl: '/images/da0602dd94c3e7a7.webp',
   isDefault: true
 };
 
