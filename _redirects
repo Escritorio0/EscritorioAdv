@@ -39,7 +39,6 @@
 /areas-de-atuacao/:slug     /areas-de-atuacao/:slug/     301
 
 # Rewrites internos: a URL continua limpa, sem redirecionar de fato.
-/                            /index.html                   200
 /areas-de-atuacao/           /areas-de-atuacao.html         200
 /area/                       /area-detalhe.html             200
 /direito-previdenciario/     /direito-previdenciario.html   200
@@ -57,5 +56,3 @@
 /admin/                       /admin/painel.html               200
 /areas-de-atuacao/:slug/     /area-detalhe.html             200
 
-# Qualquer outra rota não reconhecida.
-/*  /404.html  404
