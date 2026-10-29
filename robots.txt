@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://brenochaves.dev/clientes/blogadvogado/sitemap.xml
+Sitemap: https://drandresoliveira.com.br/sitemap.xml

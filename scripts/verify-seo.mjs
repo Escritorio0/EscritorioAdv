@@ -25,7 +25,7 @@ for (const page of publicPages) {
   requireMatch(page, html, /<meta[^>]+name=["']description["'][^>]+content=["'][^"']{25,}["']/i, 'meta description');
   requireMatch(page, html, /<meta[^>]+name=["']robots["'][^>]+content=["']index,follow["']/i, 'robots indexável');
   if (!dynamicCanonicalPages.has(page)) {
-    requireMatch(page, html, /<link[^>]+rel=["']canonical["'][^>]+href=["']https:\/\/brenochaves\.dev\/clientes\/blogadvogado\//i, 'canonical absoluto');
+    requireMatch(page, html, /<link[^>]+rel=["']canonical["'][^>]+href=["']https:\/\/drandresoliveira\.com\.br\//i, 'canonical absoluto');
   }
   if (/href=["'][^"']+\.html(?:[?#"'])/i.test(html)) failures.push(`${page}: link interno com .html`);
 }

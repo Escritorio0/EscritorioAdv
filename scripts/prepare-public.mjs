@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
 const publicDir = resolve(root, 'public');
-const site = 'https://brenochaves.dev/clientes/blogadvogado';
+const site = 'https://drandresoliveira.com.br';
 
 await mkdir(publicDir, { recursive: true });
 await Promise.all([
